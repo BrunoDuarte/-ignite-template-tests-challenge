@@ -4,6 +4,7 @@ import { AuthenticateUserUseCase } from "./AuthenticateUserUseCase"
 import { CreateUserUseCase } from "../createUser/CreateUserUseCase"
 import { ICreateUserDTO } from "../createUser/ICreateUserDTO"
 
+
 let inMemoryUsersRepository: InMemoryUsersRepository
 let authenticateUserUseCase: AuthenticateUserUseCase
 let createUserUseCase: CreateUserUseCase
@@ -30,7 +31,7 @@ describe("Authenticate user", () => {
       email: user.email,
       password: user.password
     })
-    
+
     expect(result).toHaveProperty("token")
   })
 })

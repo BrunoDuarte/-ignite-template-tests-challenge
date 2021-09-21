@@ -21,7 +21,7 @@ describe("Show user profile", () => {
     const user: ICreateUserDTO = {
       name: "bduarte",
       email: "fbruno.c.duarte@gmail.com",
-      password: "senhasupersecreta123"
+      password: "12345"
     }
 
     await createUserUseCase.execute(user)
