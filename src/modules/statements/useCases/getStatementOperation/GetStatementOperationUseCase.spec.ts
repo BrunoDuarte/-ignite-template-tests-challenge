@@ -28,6 +28,7 @@ describe("Get operation statement by ID", () => {
   enum OperationType {
     DEPOSIT = 'deposit',
     WITHDRAW = 'withdraw',
+    TRANSFER = 'transfer'
   }
 
   it("should be able to list an operation statement", async () => {

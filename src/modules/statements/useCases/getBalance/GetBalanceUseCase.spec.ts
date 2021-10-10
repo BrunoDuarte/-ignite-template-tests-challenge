@@ -28,6 +28,7 @@ describe("Get balance", () => {
   enum OperationType {
     DEPOSIT = 'deposit',
     WITHDRAW = 'withdraw',
+    TRANSFER = 'transfer'
   }
 
   it("should be able to get the balance", async () => {

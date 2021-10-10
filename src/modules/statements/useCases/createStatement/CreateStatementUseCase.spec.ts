@@ -25,8 +25,8 @@ describe("Create deposit", () => {
   enum OperationType {
     DEPOSIT = 'deposit',
     WITHDRAW = 'withdraw',
+    TRANSFER = 'transfer'
   }
-
   it("should be able to create a deposit", async () => {
     const user: ICreateUserDTO = {
       name: "bduarte",
