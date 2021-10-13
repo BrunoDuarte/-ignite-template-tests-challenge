@@ -6,7 +6,7 @@ enum OperationType {
 
 interface ICreateTransferDTO {
   user_id: string
-  receiver_id: string
+  destination_id: string
   type: OperationType
   amount: number
   description: string

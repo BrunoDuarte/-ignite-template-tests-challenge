@@ -9,7 +9,7 @@ enum OperationType {
 class TransferStatementController {
 
   async execute(request: Request, response: Response): Promise<Response> {
-    const { receiver_id } = request.params
+    const { destination_id } = request.params
     const { id: user_id } = request.user
     const { amount, description } = request.body
 
@@ -19,7 +19,7 @@ class TransferStatementController {
 
     await transferStatementUseCase.execute({
       user_id,
-      receiver_id,
+      destination_id,
       type,
       amount,
       description
